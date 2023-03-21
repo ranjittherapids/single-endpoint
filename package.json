@@ -15,5 +15,9 @@
     "mean-stack"
   ],
   "author": "ranjit_the_rapids",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.76.2",
+    "webpack-cli": "^5.0.1"
+  }
 }
