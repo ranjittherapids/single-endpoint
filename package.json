@@ -1,6 +1,6 @@
 {
   "name": "singleapi",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "description": "The 'singleApi' package helps you to call any API without creating multiple endpoints in your app.",
   "main": "dist/my-package.min.js",
   "scripts": {
