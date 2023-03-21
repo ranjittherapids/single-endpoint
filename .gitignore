@@ -1,2 +1,3 @@
-# dependencies
-/node_m
+# Node artifact files
+node_modules/
+dist/
