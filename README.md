@@ -1,6 +1,6 @@
 # singleApi
 
-### The 'singleApi' package helps you to call any API without creating multiple endpoints in your app for getData.
+### The 'single-endpoint' package helps you to call any API without creating multiple endpoints in your app for getData.
 ### singleAPi for getAll api
 
 
@@ -29,6 +29,17 @@ const reference = {
 };
  pass a singleApi function as callback and pass req,res and reference
 app.use("/singleApi",(req,res)=> singleApi(req,res,reference));
+```
+
+for acessing the referenceData you can pass {associated_data_singleApi:1}
+
+```
+  gallery: {
+       theme:{
+           associated_data_singleApi:1,
+       }
+       
+      }
 ```
 "That's great! Congratulations! Now, you are able to access the SingleAPI."
 
