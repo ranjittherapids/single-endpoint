@@ -2,7 +2,7 @@
   "name": "single_api",
   "version": "1.0.3",
   "description": "The 'singleApi' package helps you to call any API without creating multiple endpoints in your app.",
-  "main": "dist/my-package.min.js",
+  "main": "index.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
