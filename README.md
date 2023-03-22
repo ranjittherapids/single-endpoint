@@ -1,4 +1,4 @@
-# singleApi
+# single-endpoint
 
 ### The 'single-endpoint' package helps you to call any API without creating multiple endpoints in your app for getData.
 ### singleAPi for getAll api
@@ -12,7 +12,7 @@
 
 ### <span style="color:#2196f3">how to use it</span>
 ```
- const {singleApi}=require('single_api')//import singleAPi from the single_api
+ const singleEndpoint=require('single-endpoint')//import singleEndpoint from the single-endpoint
 
 const galleryModel = require("./models/gallery");//import schema that you want to acess
 const painterModel = require("./models/painter");
@@ -27,12 +27,10 @@ const reference = {
 'name as you want to acess':'modal name of the schema'
 
 };
- pass a singleApi function as callback and pass req,res and reference
-app.use("/singleApi",(req,res)=> singleApi(req,res,reference));
+ pass a singleEndpoint function as callback and pass req,res and reference
+app.use("/singleApi",(req,res)=> singleEndpoint(req,res,reference));
 ```
-
 for acessing the referenceData you can pass {associated_data_singleApi:1}
-
 ```
   gallery: {
        theme:{
@@ -41,7 +39,7 @@ for acessing the referenceData you can pass {associated_data_singleApi:1}
        
       }
 ```
-"That's great! Congratulations! Now, you are able to access the SingleAPI."
+"That's great! Congratulations! Now, you are able to access the singleEndpoint."
 
 
 
