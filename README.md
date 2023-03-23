@@ -1,13 +1,12 @@
 # single-endpoint
 
-### The 'single-endpoint' package helps you to call any API without creating multiple endpoints in your app for getData.
-### singleAPi for getAll api
+### The 'single-endpoint' package helps you to call any GET API without creating multiple endpoints in your app for each API call. It provides a single endpoint for all GET API calls.
 
 
 ## <span style="color:#4caf50">Installation
 
 <p> install npm package from the npmjs.com </p>
-<a href="https://www.npmjs.com/package/single_api">click here to download</a>
+<a href="https://www.npmjs.com/package/single-endpoint">click here to download</a>
 </span>
 
 ### <span style="color:#2196f3">how to use it</span>
