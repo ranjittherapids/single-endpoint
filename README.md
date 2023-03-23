@@ -10,7 +10,7 @@
 </span>
 
 ### <span style="color:#2196f3">how to use it</span>
-```
+
  const singleEndpoint=require('single-endpoint')//import singleEndpoint from the single-endpoint
 
 const galleryModel = require("./models/gallery");//import schema that you want to acess
@@ -28,16 +28,63 @@ const reference = {
 };
  pass a singleEndpoint function as callback and pass req,res and reference
 app.use("/singleApi",(req,res)=> singleEndpoint(req,res,reference));
-```
+
+
+
+
+### for fetching particular data like this 
+
+
+
 for acessing the referenceData you can pass {associated_data_singleApi:1}
-```
+
   gallery: {
        theme:{
            associated_data_singleApi:1,
        }
        
       }
-```
+
+
+
+it give the all object data 
+
+{
+    "gallery": {
+        "_id": {"$eq":"6419282fdc54d0198f89858d" }
+        
+    }
+}
+
+
+it give the only name and id object data 
+
+{
+    "gallery": {
+        "_id": {"$eq":"6419282fdc54d0198f89858d" },
+        "name":{}
+        
+    }
+}
+
+
+fetching multiple modal data at once 
+
+{
+    "gallery": {
+        "_id": {"$eq":"6419282fdc54d0198f89858d" },
+        "name":{}
+        
+    },
+     "painter": {
+        "_id": {"$eq":"6419282fdc54d0198f89858d" },
+        "name":{}
+        
+    }
+}
+
+
+
 "That's great! Congratulations! Now, you are able to access the singleEndpoint."
 
 
