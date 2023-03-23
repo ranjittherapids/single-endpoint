@@ -29,7 +29,8 @@ const reference = {
 ```
 pass a singleEndpoint function as callback and pass req,res and reference
 
-```app.use("/singleApi",(req,res)=> singleEndpoint(req,res,reference));
+```
+app.use("/singleApi",(req,res)=> singleEndpoint(req,res,reference));
 
 ```
 
