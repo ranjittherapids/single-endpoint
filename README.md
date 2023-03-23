@@ -10,26 +10,28 @@
 </span>
 
 ### <span style="color:#2196f3">how to use it</span>
-
+```
  const singleEndpoint=require('single-endpoint')//import singleEndpoint from the single-endpoint
 
 const galleryModel = require("./models/gallery");//import schema that you want to acess
 const painterModel = require("./models/painter");
-
+```
  reference object represent :-
   key :- use any kay as you want for acess that modal
   value :- value must be a modal
-  
+```
 const reference = {
   gallery: galleryModel,
   painter: painterModel,
 'name as you want to acess':'modal name of the schema'
 
 };
- pass a singleEndpoint function as callback and pass req,res and reference
-app.use("/singleApi",(req,res)=> singleEndpoint(req,res,reference));
+```
+pass a singleEndpoint function as callback and pass req,res and reference
 
+```app.use("/singleApi",(req,res)=> singleEndpoint(req,res,reference));
 
+```
 
 
 ### for fetching particular data like this 
